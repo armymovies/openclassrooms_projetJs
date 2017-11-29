@@ -51,4 +51,19 @@ function menu() {
     setTimeout(function() {
         actions();
     }, 1000);
-}
+};
+
+// fonction choix dans le menu
+function actions() {
+    var choix = parseInt(prompt("Choisissez une option"));
+    if (choix == 1) {
+        afficheContact();
+    } else if (choix == 2) {
+        createContact();
+    } else if (choix == 0) {
+        console.log("Au revoir");
+    } else if (choix != 0 || choix != 1 || choix != 2) {
+        console.log("Je n'ai pas compris votre choix");
+        actions();
+    };
+};
