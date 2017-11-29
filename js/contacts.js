@@ -44,3 +44,11 @@ function createContact() {
     console.log("Le nouveau contact à été ajouté");
     menu();
 };
+
+// fonction d'affichage du menu
+function menu() {
+    console.log("\n1 : Lister les contacts\n2 : Ajouter un contacts\n0 : Quitter");
+    setTimeout(function() {
+        actions();
+    }, 1000);
+}
