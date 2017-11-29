@@ -67,3 +67,7 @@ function actions() {
         actions();
     };
 };
+
+// message d'introduction
+console.log("Bienvenu dans le gestionnaire de contacts !");
+menu();
