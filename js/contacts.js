@@ -33,3 +33,14 @@ function afficheContact() {
     });
     menu();
 };
+
+// fonction permettant de créer des contacts
+function createContact() {
+    var promptNom = String(prompt("Saisissez le nom"));
+    var promptPrenom = String(prompt("Saisissez le prenom"));
+    var newContact = Object.create(Contact);
+    newContact.init(promptNom, promptPrenom);
+    contacts.push(newContact);
+    console.log("Le nouveau contact à été ajouté");
+    menu();
+};
